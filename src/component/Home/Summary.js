@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import { TypeAnimation } from 'react-type-animation';
 import classes from "./Summary.module.css";
 
 const Summary = (props) => {
@@ -12,9 +13,16 @@ const Summary = (props) => {
         results.
       </p>
       <p>
-        Proficient in front-end development and ETL with exceptional
-        communication, interpersonal, problem-solving, analytical, agility, and
-        time management skills.
+        Proficient in       <TypeAnimation sequence={[
+    'Frontend Development',
+    500,
+    'ETL', //  Continuing previous Text
+    500,
+    'Data Conversion',
+    500
+  ]}
+  style={{ fontSize: '13pt' }}
+  repeat={Infinity}/>
       </p>
     </section>
   );
