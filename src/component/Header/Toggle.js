@@ -1,14 +1,12 @@
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import classes from "./Toggle.module.css";
-import { Fragment } from 'react';
-
+import { Fragment } from "react";
 
 const Toggle = (props) => {
-    return (
-      <Fragment>
-        
-        <ToggleButtonGroup
+  return (
+    <Fragment>
+      <ToggleButtonGroup
         // value={alignment}
         exclusive
         // onChange={handleAlignment}
@@ -18,10 +16,9 @@ const Toggle = (props) => {
         <ToggleButton value="center" aria-label="left aligned">
           {/* <Aboutme /> */}
         </ToggleButton>
-      </ToggleButtonGroup> 
-      
-      </Fragment>
-    );   
+      </ToggleButtonGroup>
+    </Fragment>
+  );
 };
 
 export default Toggle;
