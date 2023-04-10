@@ -25,7 +25,7 @@ const Summary = (props) => {
   style={{ fontSize: '13pt' }}
   repeat={Infinity}/>
       </p>
-      <Button><a className= {classes.button} href="src\component\Home\Hannah_Huang_Resume.pdf"download="Hannah_Huang_CV.pdf" >Download CV</a></Button>
+      {/* <Button><a className= {classes.button} href="src\component\Home\Hannah_Huang_Resume.pdf"download="Hannah_Huang_CV.pdf" >Download CV</a></Button> */}
     </section>
   );
 };

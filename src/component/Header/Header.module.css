@@ -27,3 +27,7 @@
   object-fit: cover;
   transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
 }
+
+.MuiToggleButtonGroup-root Toggle_togglegroup__mOhi1 css-1gjgmky-MuiToggleButtonGroup-root{
+  margin-left: 15pt;
+}
