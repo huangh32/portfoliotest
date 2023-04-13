@@ -4,10 +4,49 @@ import classes from "./Aboutme.module.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Card from "react-bootstrap/Card";
+// import Card from "react-bootstrap/Card";
+import Item from "./UI/Item";
 import { RocketTakeoff, Database, Tools, Window } from "react-bootstrap-icons";
 
+const content = [
+  {
+    icon: <RocketTakeoff />,
+    header: "Development",
+    subtitle: "HTML5, CSS, JavaScript, Python, C#",
+    text: "Bootstrap, Chart.js, Visual Studio 2018, Postman,Material UI, Git/ GitHub, Microsoft Office, PyCharm,Eclipse",
+  },
+  {
+    icon: <Database />,
+    header: "Database",
+    subtitle: "  SQL, MySQL, SQL Server, MongoDB",
+    text: "Bootstrap, Chart.js, Visual Studio 2018, Postman,Material UI, Git/ GitHub, Microsoft Office, PyCharm,Eclipse",
+  },
+  {
+    icon: <Tools />,
+    header: " Tools & Framework",
+    subtitle:
+      "React JS, Figma, AdobeXD, SFTP, Linux, Visual Studio,Pycharm, TFS, Git, Bitbucket",
+    text: "Bootstrap, Chart.js, Visual Studio 2018, Postman,Material UI, Git/ GitHub, Microsoft Office, PyCharm,Eclipse",
+  },
+  {
+    icon: <Window />,
+    header: "Assistant",
+    subtitle: "   JIRA, Confluence, Microsoft Teams",
+    text: "Bootstrap, Chart.js, Visual Studio 2018, Postman,Material UI, Git/ GitHub, Microsoft Office, PyCharm,Eclipse",
+  },
+];
+
 const Aboutme = (props) => {
+  const Itemlist = content.map((i) => (
+    <div className={classes.mainContainerrowCol}>
+      <Item
+        icon={i.icon}
+        header={i.header}
+        subtitle={i.subtitle}
+        text={i.text}
+      />
+    </div>
+  ));
   return (
     <Fragment>
       <div className={classes.leftsidebargrid}>
@@ -30,88 +69,7 @@ const Aboutme = (props) => {
           </div>
           <div>
             <Container className={classes.mainContainer}>
-              <Row className={classes.mainContainerrow}>
-                <Col xs={6} className={classes.mainContainerrowCol}>
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Body>
-                      <Card.Header as="h3">
-                        <RocketTakeoff />
-                        Development
-                      </Card.Header>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        HTML5, CSS, JavaScript, Python, C#
-                      </Card.Subtitle>
-                      <Card.Text>
-                        Bootstrap, Chart.js, Visual Studio 2018, Postman,
-                        Material UI, Git/ GitHub, Microsoft Office, PyCharm,
-                        Eclipse
-                      </Card.Text>
-                      {/* <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link> */}
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col xs={6} className={classes.mainContainerrowCol}>
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Body>
-                      <Card.Header as="h3">
-                        <Database />
-                        Database
-                      </Card.Header>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        SQL, MySQL, SQL Server, MongoDB
-                      </Card.Subtitle>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      {/* <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link> */}
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-              <Row className={classes.mainContainerrow}>
-                <Col className={classes.mainContainerrowCol}>
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Body>
-                      <Card.Header as="h3">
-                        <Tools />
-                        Tools & Framework
-                      </Card.Header>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        React JS, Figma, AdobeXD, SFTP, Linux, Visual Studio,
-                        Pycharm, TFS, Git, Bitbucket
-                      </Card.Subtitle>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      {/* <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link> */}
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col className={classes.mainContainerrowCol}>
-                  <Card style={{ width: "18rem" }}>
-                    <Card.Body>
-                      <Card.Header as="h3">
-                        <Window />
-                        Assistant
-                      </Card.Header>
-                      <Card.Subtitle className="mb-2 text-muted">
-                        JIRA, Confluence, Microsoft Teams
-                      </Card.Subtitle>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                      {/* <Card.Link href="#">Card Link</Card.Link>
-                      <Card.Link href="#">Another Link</Card.Link> */}
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
+              <Row className={classes.mainContainerrow}>{Itemlist}</Row>
             </Container>
           </div>
         </main>

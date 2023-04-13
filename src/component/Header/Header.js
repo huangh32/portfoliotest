@@ -7,7 +7,7 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h2>Welcome to my porfolio</h2>
-        {/* <Toggle className={classes.togglebar}/> */}
+        <Toggle className={classes.togglebar} />
       </header>
       <div className={classes["main-image"]}>
         <img
