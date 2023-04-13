@@ -1,4 +1,4 @@
-.togglegroup {
+/* .togglegroup {
   cursor: pointer;
   font: inherit;
   border: none;
@@ -10,4 +10,21 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
   background-color: white;
   margin-right: auto;
+} */
+
+.togglegroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+}
+
+.navlink {
+  color: white !important;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 1.5rem;
 }
