@@ -44,6 +44,7 @@ const Aboutme = (props) => {
         header={i.header}
         subtitle={i.subtitle}
         text={i.text}
+        className={classes.item}
       />
     </div>
   ));
