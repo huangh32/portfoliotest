@@ -37,7 +37,7 @@ const content = [
 ];
 
 const Aboutme = (props) => {
-  const Itemlist = content.map((i) => (
+  const firstRow = content.slice(0, 2).map((i) => (
     <div className={classes.mainContainerrowCol}>
       <Item
         icon={i.icon}
@@ -48,6 +48,19 @@ const Aboutme = (props) => {
       />
     </div>
   ));
+
+  const secondRow = content.slice(2).map((i) => (
+    <div className={classes.mainContainerrowCol2}>
+      <Item
+        icon={i.icon}
+        header={i.header}
+        subtitle={i.subtitle}
+        text={i.text}
+        className={classes.item}
+      />
+    </div>
+  ));
+
   return (
     <Fragment>
       <div className={classes.leftsidebargrid}>
@@ -70,7 +83,8 @@ const Aboutme = (props) => {
           </div>
           <div>
             <Container className={classes.mainContainer}>
-              <Row className={classes.mainContainerrow}>{Itemlist}</Row>
+              <Row className={classes.mainContainerrow}>{firstRow}</Row>
+              <Row className={classes.mainContainerrow}>{secondRow}</Row>
             </Container>
           </div>
         </main>
@@ -82,4 +96,5 @@ const Aboutme = (props) => {
     </Fragment>
   );
 };
+
 export default Aboutme;

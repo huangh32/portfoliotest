@@ -13,7 +13,7 @@ const Toggle = (props) => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className={classes.togglegroup}>
-            <Nav.Link href="#features" className={classes.navlink}>
+            <Nav.Link href="#experience" className={classes.navlink}>
               Experience
             </Nav.Link>
             <Nav.Link href="#projects" className={classes.navlink}>
