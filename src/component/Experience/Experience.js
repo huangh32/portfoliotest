@@ -238,7 +238,9 @@ const Experience = (props) => {
           </div>
         </main>
         <section className={classes.leftsidebar}>
-          <Row>Coding Skills</Row>
+          <Row>
+            <h3>Coding Skills</h3>
+          </Row>
           <Row>
             <Col span={6} push={18}>
               React JS
@@ -295,6 +297,99 @@ const Experience = (props) => {
                   "100%": "#87d068",
                 }}
                 percent={80}
+                status="active"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={6} push={18}>
+              HTML5/CSS3
+            </Col>
+            <Col span={18} pull={6}>
+              <Progress
+                strokeColor={{
+                  "0%": "#108ee9",
+                  "100%": "#87d068",
+                }}
+                percent={99}
+                status="active"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <h3>Tools </h3>
+          </Row>
+          <Row>
+            <Col span={6} push={18}>
+              AWS S3
+            </Col>
+            <Col span={18} pull={6}>
+              <Progress
+                strokeColor={{
+                  "0%": "#108ee9",
+                  "100%": "#87d068",
+                }}
+                percent={85}
+                status="active"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={6} push={18}>
+              SFTP
+            </Col>
+            <Col span={18} pull={6}>
+              <Progress
+                strokeColor={{
+                  "0%": "#108ee9",
+                  "100%": "#87d068",
+                }}
+                percent={85}
+                status="active"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={6} push={18}>
+              Git/ Bitbucket
+            </Col>
+            <Col span={18} pull={6}>
+              <Progress
+                strokeColor={{
+                  "0%": "#108ee9",
+                  "100%": "#87d068",
+                }}
+                percent={99}
+                status="active"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={6} push={18}>
+              Postman
+            </Col>
+            <Col span={18} pull={6}>
+              <Progress
+                strokeColor={{
+                  "0%": "#108ee9",
+                  "100%": "#87d068",
+                }}
+                percent={80}
+                status="active"
+              />
+            </Col>
+          </Row>
+          <Row>
+            <Col span={6} push={18}>
+              Agile/ Scrum
+            </Col>
+            <Col span={18} pull={6}>
+              <Progress
+                strokeColor={{
+                  "0%": "#108ee9",
+                  "100%": "#87d068",
+                }}
+                percent={99}
                 status="active"
               />
             </Col>
